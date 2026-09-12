@@ -1,0 +1,837 @@
+<!DOCTYPE html>  <html>    <head>    
+  <!-- Google tag (gtag.js) -->    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-21SYNV90W8"></script>    
+<script>    
+  window.dataLayer = window.dataLayer || [];    
+  function gtag(){dataLayer.push(arguments);}    
+  gtag('js', new Date());  gtag('config', 'G-21SYNV90W8');  
+</script>  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4275938728975012"
+     crossorigin="anonymous"></script>
+<title>JEE MAIN</title>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>  
+<style>  
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+
+    background: radial-gradient(circle at 20% 20%, #67e8f9, #020617 90%);
+    /* balanced light → dark for best shine */
+
+    color: #e2e8f0;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+/* 🔥 Main shine (visible + smooth) */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: -150%;
+    width: 140%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        transparent 35%,
+        rgba(255,255,255,0.55),
+        transparent 65%
+    );
+
+    transform: skewX(-20deg);
+    pointer-events: none;
+    z-index: 2;
+
+    mix-blend-mode: screen;
+    filter: blur(1px);
+
+    animation: globalShine 22s linear infinite;
+}
+
+/* 🔥 Secondary soft glow */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: -200%;
+    width: 160%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        transparent 30%,
+        rgba(255,255,255,0.25),
+        transparent 70%
+    );
+
+    transform: skewX(-20deg);
+    pointer-events: none;
+    z-index: 1;
+
+    mix-blend-mode: screen;
+    filter: blur(2px);
+
+    animation: globalShine2 36s linear infinite;
+}
+/* TABLE */
+table {
+width: 100%;
+border-collapse: separate;
+border-spacing: 0 8px; /* row gap */
+margin-top: 20px;
+}
+td {
+padding: 12px;
+background: #020617;
+}
+
+/* make rows look like cards */
+tr td:first-child {
+border-top-left-radius: 8px;
+border-bottom-left-radius: 8px;
+}
+
+tr td:last-child {
+border-top-right-radius: 8px;
+border-bottom-right-radius: 8px;
+}
+th {
+background: #1e293b;
+color: #f1f5f9;
+padding: 12px;
+}
+th:first-child {
+border-top-left-radius: 8px;
+}
+
+th:last-child {
+border-top-right-radius: 8px;
+}
+.correct td {
+background: #022c22 !important;
+color: #4ade80 !important;
+font-weight: bold;
+}
+
+.wrong td {
+background: #450a0a !important;
+color: #f87171 !important;
+font-weight: bold;
+}
+
+/* glow on full row instead of each cell */
+tr.correct {
+box-shadow: 0 0 15px rgba(34,197,94,0.6);
+}
+
+tr.wrong {
+box-shadow: 0 0 15px rgba(239,68,68,0.6);
+}
+td {
+transition: 0.2s;
+}
+/* hover effect */
+tr:hover {
+opacity: 0.85;
+}
+/* HEADER */
+.header {
+text-align: center;
+border-bottom: 1px solid #1e293b;
+margin-bottom: 20px;
+}
+
+/* UPLOAD SECTION */
+.upload-section {
+display: flex;
+gap: 20px;
+margin-bottom: 20px;
+}
+
+.box {
+flex: 1;
+border: 2px dashed #334155;
+padding: 20px;
+border-radius: 10px;
+text-align: center;
+}
+
+/* BUTTON */
+.btn {
+    background: linear-gradient(
+        270deg,
+        #16a34a,
+        #22c55e,
+        #4ade80,
+        #22c55e,
+        #16a34a
+    );
+    background-size: 400% 400%;
+
+    color: black;
+    border: none;
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: 
+        0 0 15px rgba(34,197,94,0.5),
+        0 0 25px rgba(34,197,94,0.3);
+}
+
+/* 🔥 Thin shine for button */
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 14%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        transparent 40%,
+        rgba(255,255,255,0.95),
+        transparent 60%
+    );
+
+    transform: skewX(-20deg);
+
+    animation: shineFlow 6s linear infinite;
+    animation-delay: 0s; /* 👈 flow feel */
+}
+
+/* hover effect */
+.btn:hover {
+    transform: scale(1.03);
+    box-shadow: 
+        0 0 25px rgba(34,197,94,0.7),
+        0 0 40px rgba(34,197,94,0.5);
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+/* SCORE CARD */
+.score-card {
+display: flex;
+justify-content: space-around;
+margin: 25px 0;
+padding: 20px;
+background: #020617;
+border: 1px solid #1e293b;
+border-radius: 12px;
+}
+
+.score-val {
+font-size: 24px;
+font-weight: bold;
+}
+
+/* LOADER */
+#loader {
+text-align: center;
+margin-top: 20px;
+font-weight: bold;
+}tr {
+transition: 0.2s;
+}
+
+tr.correct:hover {
+transform: scale(1.01);
+}
+
+tr.wrong:hover {
+transform: scale(1.01);
+}.summary-table {
+width: 100%;
+border-collapse: separate;
+border-spacing: 0 6px;
+margin-top: 10px;
+}
+
+.summary-table td {
+background: #020617;
+padding: 10px;
+}
+
+.summary-table th {
+background: #1e293b;
+}
+
+/* rounded corners */
+.summary-table tr td:first-child {
+border-top-left-radius: 6px;
+border-bottom-left-radius: 6px;
+}
+
+.summary-table tr td:last-child {
+border-top-right-radius: 6px;
+border-bottom-right-radius: 6px;
+}.summary-table tr:last-child td:first-child {
+border-top-left-radius: 8px;
+border-bottom-left-radius: 8px;
+}
+
+.summary-table tr:last-child td:last-child {
+border-top-right-radius: 8px;
+border-bottom-right-radius: 8px;
+}
+.summary-table tr:last-child td {
+    background: #4a044e !important;
+}.summary-table tr:last-child {
+    transform: scale(1.02);
+}
+.summary-table tr:last-child {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(236,72,153,0.6);
+}
+
+
+/* 🔥 Smooth Shine Effect */
+.footer-box {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: inline-block;
+
+    background: white;
+    color: black;
+
+    padding: 2px 8px;
+    border-radius: 8px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    width: auto;
+    white-space: nowrap;
+
+    border: 1px solid #ccc;
+}
+.footer-box:hover {
+    transform: translateX(-50%) scale(1.05);
+    transition: 0.2s;
+}
+.container {
+    max-width: 1100px;
+    margin: auto;
+    background: rgba(15,23,42,0.15);
+
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    position: relative;
+    z-index: 3;
+
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 0 40px rgba(34,197,94,0.1);
+}
+#resultArea {
+    flex: 1;
+}
+.student-box {
+    background: linear-gradient(145deg, #020617, #0f172a);
+    border: 1px solid #334155;
+    padding: 14px 22px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+    box-shadow: 0 0 12px rgba(34,197,94,0.15);
+    letter-spacing: 0.5px;
+}
+@keyframes gradientMoveBtn {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 
+            0 0 15px rgba(34,197,94,0.5),
+            0 0 25px rgba(34,197,94,0.3);
+    }
+    50% {
+        box-shadow: 
+            0 0 25px rgba(34,197,94,0.8),
+            0 0 50px rgba(34,197,94,0.6);
+    }
+    100% {
+        box-shadow: 
+            0 0 15px rgba(34,197,94,0.5),
+            0 0 25px rgba(34,197,94,0.3);
+    }
+}
+@keyframes shineFlow {
+    0% {
+        left: -120%;
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    50% {
+        left: 120%;
+        opacity: 1;
+    }
+    100% {
+        left: 120%;
+        opacity: 0;
+    }
+}
+@keyframes globalShine {
+    0% {
+        left: -150%;
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    50% {
+        left: 150%;
+        opacity: 1;
+    }
+    100% {
+        left: 150%;
+        opacity: 0;
+    }
+}
+@keyframes globalShine2 {
+    0% {
+        left: -200%;
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        left: 200%;
+        opacity: 1;
+    }
+    100% {
+        left: 200%;
+        opacity: 0;
+    }
+}
+.hero {
+    height: 260px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        /* full fill */
+    object-position: 50% 15%; /* 👈 upar focus (JEE MAIN visible) */
+    display: block;
+}
+.upload-box {
+    flex: 1;
+    border: 2px dashed rgba(255,255,255,0.3);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    background: rgba(15,23,42,0.4);
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+
+.upload-box:hover {
+    border-color: #4ade80;
+    box-shadow: 0 0 20px rgba(34,197,94,0.6);
+    transform: scale(1.03);
+}
+
+.upload-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.upload-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.upload-sub {
+    font-size: 14px;
+    color: #94a3b8;
+}
+</style>
+</head>    
+<body>  <div class="container">   
+<div class="hero">
+  <img src="https://lh3.googleusercontent.com/d/1IOnIxf3tcW8sH9Gibo2EBZA3NiVBXzgf">
+</div>
+  <div class="upload-section">    
+    <div class="upload-box" onclick="document.getElementById('resPdf').click()">
+    <div class="upload-icon">📄</div>
+    <div class="upload-text" id="resText">Drop Response PDF</div>
+    <div class="upload-sub">or click to upload</div>
+    <input type="file" id="resPdf" accept="application/pdf" hidden>
+</div>
+    <div class="upload-box" onclick="document.getElementById('ansPdf').click()">
+    <div class="upload-icon">📑</div>
+    <div class="upload-text" id="ansText">Drop Answer Key PDF</div>
+    <div class="upload-sub">or click to upload</div>
+    <input type="file" id="ansPdf" accept="application/pdf" hidden>
+</div> 
+</div>    <button class="btn" id="analyzeBtn" onclick="startAnalysis()">🚀 START ANALYSIS</button>
+
+<div id="loader" style="display:none;">🔥JAI SHREE RAM🔥</div>    
+<div id="resultArea" style="display:none;">    
+  <div id="studentInfo" class="student-box"></div>
+  <div id="shiftInfo" style="text-align:center; margin-bottom:10px;"></div>    <div class="score-card">    
+    <div><span class="score-val" id="totalScore">0</span>Total Marks</div>    
+    <div><span class="score-val" id="countCorrect" style="color:#68d391;">0</span>Correct</div>    
+    <div><span class="score-val" id="countWrong" style="color:#fc8181;">0</span>Wrong</div>    
+    <div><span class="score-val" id="countSkipped">0</span>Skipped</div>    
+</div>    
+
+<h3 style="margin-top:30px;">Subject-wise Summary</h3>    
+<div id="summaryTableContainer"></div>    
+
+<h3 style="margin-top:30px;">Question Breakdown</h3>    
+<div id="tableContainer"></div>
+
+</div> <!-- resultArea -->
+
+<div class="footer-box">
+   🔥 ABHISHEK VERMA NITP 🔥
+</div>
+
+</div> <!-- container -->
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyCjaOdG7Ene6P6tnDk71sMAAowJvcgB8VQ",
+  authDomain: "jee-main-marks.firebaseapp.com",
+  projectId: "jee-main-marks",
+  storageBucket: "jee-main-marks.firebasestorage.app",
+  messagingSenderId: "215868918365",
+  appId: "1:215868918365:web:82b44a9f816fd1b067dbb4",
+  measurementId: "G-WS5MWNB6ST"
+};
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+</script>
+<script>
+pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';    
+async function extractText(file) {
+const arrayBuffer = await file.arrayBuffer();
+const pdf = await pdfjsLib.getDocument(arrayBuffer).promise;
+let pages = [];
+for (let i = 1; i <= pdf.numPages; i++) {
+const page = await pdf.getPage(i);
+const content = await page.getTextContent();
+pages.push(content.items.map(item => item.str).join(" "));
+}
+return pages;
+}
+function getShiftDetails(text) {
+    text = text.replace(/\s+/g, ' ');
+
+    const dateMatch =
+        text.match(/Test\s*Date\s*[:\s]*(\d{2}\/\d{2}\/\d{4})/i) ||
+        text.match(/Date\s*[:\s]*(\d{2}\/\d{2}\/\d{4})/i) ||
+        text.match(/(\d{2}\/\d{2}\/\d{4})/);
+
+    const timeMatch = text.match(/(\d{1,2}:\d{2}\s*[APM]{2})/i);
+
+    let shift = "First";
+
+    if (timeMatch) {
+        let timeStr = timeMatch[1];
+        let hour = parseInt(timeStr.split(":")[0]);
+
+        if (timeStr.toUpperCase().includes("PM") && hour !== 12) {
+            hour += 12;
+        }
+
+        if (hour >= 14) shift = "Second";
+    }
+
+    return {
+        date: dateMatch ? dateMatch[1] : "N/A",
+        shift: shift
+    };
+  }
+function getStudentDetails(text) {
+
+    text = text.replace(/\s+/g, ' ');
+
+    const nameMatch = text.match(/Candidate\s*Name\s*[:\s]*([A-Za-z\s]+)/i);
+
+    let rollMatch =
+        text.match(/Roll\s*No\.?\s*[:\s]*([A-Z0-9]+)/i) ||
+        text.match(/Roll\s*No[\s\S]{0,30}?([A-Z0-9]{6,})/i) ||
+        text.match(/Roll\s*Number\s*[:\s]*([A-Z0-9]+)/i) ||
+        text.match(/Application\s*No\.?\s*[:\s]*([A-Z0-9]+)/i) ||
+        text.match(/[A-Z]{2,}\d{6,}/i);
+
+    return {
+        name: nameMatch ? nameMatch[1].trim() : "N/A",
+        roll: rollMatch ? (rollMatch[1] || rollMatch[0]) : "N/A"
+    };
+}
+async function startAnalysis() {
+const resFile = document.getElementById('resPdf').files[0];
+const ansFile = document.getElementById('ansPdf').files[0];
+if (!resFile || !ansFile) return alert("Please upload both PDFs.");
+
+document.getElementById('loader').style.display = "block";    
+const resPages = await extractText(resFile);    
+const fullResText = resPages.join(" ");    
+const shiftDetails = getShiftDetails(fullResText);    
+
+// NO BLOCKING (analysis will continue)
+if (!shiftDetails.date) {
+    console.log("Shift not found, continuing...");
+  }
+
+// 🔥 sirf first page use karo
+const student = getStudentDetails(fullResText);
+const btn = document.getElementById('analyzeBtn');
+btn.innerText = "⏳ Analyzing...";
+btn.disabled = true;
+btn.style.opacity = "0.7";
+const ansPages = await extractText(ansFile);    
+let answers = parseAnswerKey(ansPages.join(" "));    
+let responses = parseResponse(fullResText);    
+    
+displayResults(responses, answers, shiftDetails, student);}
+function parseAnswerKey(text) {
+    const key = {};
+    const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
+
+    lines.forEach(line => {
+
+        // 🟢 NEW FORMAT (Final Answer Key PDF)
+        let newMatch = line.match(/^(\d{7,})\s+(\d{7,}(?:,\d{7,})?)/);
+
+        if (newMatch) {
+            const qid = newMatch[1];
+            const ans = newMatch[2];
+
+            if (!key[qid]) {
+                key[qid] = ans.includes(",") ? ans.split(",") : ans;
+            }
+            return;
+        }
+
+        // 🔵 OLD FORMAT (Screenshot / simple PDF)
+        const oldMatches = [...line.matchAll(/(\d+)\s+([^\s]+)/g)];
+
+        oldMatches.forEach(m => {
+            const qid = m[1];
+            const ans = m[2];
+
+            if (!key[qid]) {
+                key[qid] = ans;
+            }
+        });
+
+    });
+
+    return key;
+}
+function parseResponse(text) {let data = [];
+// Normalize text (important for messy PDFs)
+text = text.replace(/\s+/g, ' ');
+// Split using multiple safe patterns
+const questionBlocks = text.split(/(?:Q.?\s*\d+|Question\s*\d+)/i).slice(1);
+const qNumbers = [...text.matchAll(/(?:Q.?\s*(\d+)|Question\s*(\d+))/gi)]
+.map(m => parseInt(m[1] || m[2]));
+
+questionBlocks.forEach((sec, index) => {const qNum = qNumbers[index] || index + 1;    
+    const qidMatch = sec.match(/Question\s*ID\s*[:\s]*(\d+)/i);    
+    if (!qidMatch) return;    
+    let sub = (qNum <= 25) ? "Maths" : (qNum <= 50 ? "Physics" : "Chemistry");    
+    let ans = null;    
+    // MCQ detection    
+    const optMatch = sec.match(/Chosen\s*Option\s*[:\s]*([1-4])/i);    
+    if (optMatch && optMatch[1] !== "0") {    
+        const optIdRegex = new RegExp(`Option\\s*${optMatch[1]}\\s*ID\\s*[:\\s]*(\\d+)`, 'i');    
+        const optIdMatch = sec.match(optIdRegex);    
+        if (optIdMatch) ans = optIdMatch[1];}    
+    // Numerical detection    
+    else if (/Question\s*Type\s*[:\s]*SA/i.test(sec)) {    
+        const numMatch = sec.match(/Ans\s*wer\s*[:\s]*([-+]?\d*\.?\d+)/i);    
+        if (numMatch) ans = numMatch[1].trim();}    
+    data.push({qNum,qid: qidMatch[1],ans,sub});});return data;}
+
+function isNumericEqual(a, b) {
+return Math.abs(parseFloat(a) - parseFloat(b)) < 0.0001;}
+function displayResults(responses, answers, shift, student) {
+let html = `<table id="mainTable">
+<tr>
+<th>#</th>
+<th>Subject</th>
+<th>Question ID</th>
+<th>Your Ans</th>
+<th>Correct Ans</th>
+<th>Status</th>
+<th>Marks</th>
+</tr>`;
+
+responses.forEach((r) => {    
+    const correctAns = answers[r.qid];    
+    let status = "Skipped", marks = 0, rowClass = "";    
+
+    if (!correctAns) {    
+status = "INVALID KEY";    
+marks = 0;} else if (r.ans) {    
+const isCorrect =
+    Array.isArray(correctAns)
+        ? correctAns.includes(r.ans.toString())
+        : r.ans.toString() === correctAns.toString();
+if (isCorrect) { status = "CORRECT"; marks = 4; rowClass = "correct"; }    
+else { status = "WRONG"; marks = -1; rowClass = "wrong"; }
+
+}
+
+html += `<tr class="${rowClass}">    
+        <td>${r.qNum}</td>    
+        <td class="sub-cell ${r.sub.toLowerCase()}">${r.sub}</td>    
+        <td>${r.qid}</td>    
+        <td>${r.ans || '--'}</td>    
+        <td>${correctAns || 'N/A'}</td>    
+        <td class="status-cell">${status}</td>    
+        <td class="mark-cell">${marks}</td>    
+    </tr>`;    
+});    
+
+document.getElementById('tableContainer').innerHTML = html + "</table>";
+calculateFromTable();
+
+// 🔥 SAFE DOC ID (no duplicates + no overwrite issue)
+const docId = (student.roll && student.roll !== "N/A")
+  ? student.roll
+  : "unknown_" + Date.now();
+
+db.collection("results").doc(docId).set({
+  name: student.name,
+  roll: student.roll,
+  score: window.g.score,
+  correct: window.g.c,
+  wrong: window.g.w,
+  skipped: window.g.s,
+  date: new Date().toISOString()
+})
+.then(() => {
+  console.log("🔥 Data saved");
+})
+.catch((error) => {
+  console.error("❌ Error saving:", error);
+});
+document.getElementById('loader').style.display = "none";    
+document.getElementById('resultArea').style.display = "block";    
+document.getElementById('studentInfo').innerHTML =
+    `😎<span style="color:#4ade80">${student.name}</span> 
+     &nbsp;&nbsp; | &nbsp;&nbsp; 
+     🎫 <span style="color:#60a5fa">${student.roll}</span>`;
+document.getElementById('shiftInfo').innerHTML =
+`Date: ${shift.date || "N/A"} | Shift: ${shift.shift || "N/A"}`;
+const btn = document.getElementById('analyzeBtn');
+btn.innerText = "🚀 START ANALYSIS";
+btn.disabled = false;
+btn.style.opacity = "1";
+}
+
+function calculateFromTable() {
+const rows = document.querySelectorAll("#mainTable tr:not(:first-child)");
+let summary = {
+"Maths": { c: 0, w: 0, s: 0, score: 0 },
+"Physics": { c: 0, w: 0, s: 0, score: 0 },
+"Chemistry": { c: 0, w: 0, s: 0, score: 0 }
+};
+
+rows.forEach(row => {    
+    const sub = row.querySelector(".sub-cell").innerText;    
+    const status = row.querySelector(".status-cell").innerText;    
+    const marks = parseInt(row.querySelector(".mark-cell").innerText);    
+
+    if (status === "CORRECT") summary[sub].c++;    
+    else if (status === "WRONG") summary[sub].w++;    
+    else summary[sub].s++;    
+        
+    summary[sub].score += marks;    
+});    
+
+let sumHtml = `<table class="summary-table"><tr><th>Subject</th><th>Correct</th><th>Incorrect</th><th>Skipped</th><th>Score</th><th>Accuracy</th></tr>`;    
+let g = { c: 0, w: 0, s: 0, score: 0 };    
+
+// Explicit order for the summary table    
+const order = ["Maths", "Physics", "Chemistry"];    
+order.forEach(s => {    
+    let att = summary[s].c + summary[s].w;    
+    let accVal = att > 0 ? (summary[s].c / att) * 100 : 0;
+let accColor = accVal >= 80 ? "#38a169" : (accVal >= 50 ? "#ecc94b" : "#e53e3e");
+let acc = `<span style="color:${accColor}; font-weight:bold;">${accVal.toFixed(1)}%</span>`;
+sumHtml += `<tr>
+<td>${s}</td>
+<td>${summary[s].c}</td>
+<td>${summary[s].w}</td>
+<td>${summary[s].s}</td>
+<td>${summary[s].score}</td>
+<td>${acc}</td>
+</tr>`;
+g.c += summary[s].c; g.w += summary[s].w; g.s += summary[s].s; g.score += summary[s].score;
+});
+
+document.getElementById('summaryTableContainer').innerHTML = sumHtml + `<tr style="background:#4a044e; font-weight:bold; color:#f9a8d4; box-shadow:0 0 10px rgba(236,72,153,0.6);">
+
+<td>TOTAL</td>  
+<td>${g.c}</td>  
+<td>${g.w}</td>  
+<td>${g.s}</td>  
+<td>${g.score}</td>  
+<td>${(() => {  
+    let acc = (g.c+g.w)>0 ? (g.c/(g.c+g.w))*100 : 0;  
+    let color = acc >= 80 ? "#4ade80" : (acc >= 50 ? "#facc15" : "#f87171");  
+    return `<span style="color:${color}; font-weight:bold;">${acc.toFixed(1)}%</span>`;  
+})()}</td>  
+</tr></table>`;   document.getElementById('totalScore').innerText = g.score;    
+document.getElementById('totalScore').style.color =    
+g.score >= 150 ? "#48bb78" : (g.score >= 100 ? "#ecc94b" : "#f56565");
+
+document.getElementById('countCorrect').innerText = g.c;
+document.getElementById('countWrong').innerText = g.w;
+document.getElementById('countSkipped').innerText = g.s;
+window.g = g;
+}
+window.onload = function() {
+
+document.getElementById("resPdf").addEventListener("change", function() {
+    document.getElementById("resText").innerText = this.files[0].name;
+});
+
+document.getElementById("ansPdf").addEventListener("change", function() {
+    document.getElementById("ansText").innerText = this.files[0].name;
+});
+
+};
+</script>     
+</body>    
+</html>
